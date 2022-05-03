@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PizzaHut - Express</title>
+</head>
+<body>
+
+    <header class="topo">
+        <h2>PizzaHut - Express</h2>
+        <p>Seu serviço de pedidos express!</p>
+    </header>    
+
+    <section class="formulario">
+        <form>
+            <h3>Escolha aqui o seu sabor:</h3>
+            <input type="radio" id="mussarela" name="sabor"><label for="mussarela">Mussarela</label>
+            <input type="radio" id="calabresa" name="sabor"><label for="calabresa">Calabresa</label>
+            <input type="radio" id="mista" name="sabor"><label for="mista">Mista</label>
+        </form>
+            <div>
+                <button id="adicionar" class="botoes">Adicionar</button>
+                <button id="remover" class="botoes">Remover</button>
+            </div>
+    </section>
+
+
+    <section>
+        <table>
+            <tr>
+                <th>Sabor</th><th>Quantidade</th><th>Valor</th>
+            </tr>
+            <tr>
+                <td>Mussarela</td><td id="resMussarela"></td><td id="vendaMussarela"></td>
+            </tr>
+            <tr>
+                <td>Calabresa</td><td id="resCalabresa"></td><td id="vendaCalabresa"></td>
+            </tr>
+            <tr>
+                <td>Mista</td><td id="resMista"></td><td id="vendaMista"></td>
+            </tr>
+        </table>
+
+        <button id="planilha" class="botoes">Planilha</button>
+    </section>
+
+    <script src="jscript.js"></script>
+    
+</body>
+</html>
