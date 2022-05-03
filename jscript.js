@@ -11,11 +11,13 @@ let vendaMista = 0.00;
 let btnAdicionar = document.getElementById('adicionar');
 let btnRemover = document.getElementById('remover');
 let btnPlanilha = document.getElementById('planilha');
+let btnPedir = document.getElementById('pedir');
 
 //EVENTOS
 btnAdicionar.addEventListener('click',adicionar,false);
 btnRemover.addEventListener('click',remover,false);
 btnPlanilha.addEventListener('click',planilha,false);
+btnPedir.addEventListener('click',pedir,false);
 
 //FUNÇÕES
 function adicionar(e) {
@@ -85,3 +87,7 @@ function remover(e) {
         document.getElementById('vendaCalabresa').innerHTML = vendaCalabresa;
     }
 }
+
+function pedir(e) {
+        document.getElementById('teste').innerHTML = 'Seu pedido foi realizado, obrigado!';
+    }
