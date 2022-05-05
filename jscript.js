@@ -89,5 +89,6 @@ function remover(e) {
 }
 
 function pedir(e) {
-        document.getElementById('teste').innerHTML = 'Seu pedido foi realizado, obrigado!';
+        //document.getElementById('teste').innerHTML = 'Seu pedido foi realizado, obrigado!';
+        alert('Seu pedido foi realizado!');
     }
